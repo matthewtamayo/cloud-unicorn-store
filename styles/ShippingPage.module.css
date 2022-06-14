@@ -1,5 +1,5 @@
 @media only screen and (min-width: 280px) {
-  #shipping-information-wrapper {
+  .shippingInformationWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     border-style: double;
   }
 
-  #distance-cost-wrappper {
+  .distanceCostWrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -21,14 +21,14 @@
     border-radius: 5%;
   }
 
-  #shipping-cost-wrapper {
+  .shippingCostWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1rem 0rem 1rem 0rem;
   }
 
-  #confirm-shippping-wrapper {
+  .confirmShippingWrapper {
     margin-left: auto;
   }
 }

@@ -2,27 +2,21 @@ import { useState } from 'react'
 
 import HomePage from './home-page'
 import ProductPage from './product-page'
+import Shipping from './shipping-page'
 
 export default function Main() {
 
-  const [imageIndex, setImageIndex] = useState(0)
-  const [pageActive, setpageActive] = useState([true, false, false, false])
-  const [showDistanceAndCost, setShowDistanceAndCost] = useState(false)
+  // for some reason if you pass a prop to a page, once the url is redirected the props don't get passed
+  // for now store states inside the pages and not pass them to other pages
 
-  const states = {
-    imageIndex,
-    setImageIndex,
-    pageActive,
-    setpageActive,
-    showDistanceAndCost,
-    setShowDistanceAndCost
-  }
   return (
     <div>
-      {/* <HomePage states={states} /> */}
 
-      <ProductPage />
+      {/* <HomePage /> */}
 
+      {/* <ProductPage /> */}
+
+      <Shipping />
       
     </div>
   )

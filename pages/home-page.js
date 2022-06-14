@@ -1,5 +1,7 @@
 import styles from '../styles/HomePage.module.css'
 
+import { useState } from 'react'
+
 import { UnicornLogo, FeatureProductsCarousel } from '../components/home'
 import { SearchBar, ProductCard } from '../components'
 
@@ -7,8 +9,9 @@ import { Typography } from '@telus-uds/ds-allium'
 
 import { sampleUnicorns } from '../constants'
 
-function HomePage({ states }) {
-  const { imageIndex, setImageIndex, pageActive, setpageActive } = states
+function HomePage() {
+  const [imageIndex, setImageIndex] = useState(0)
+  const [pageActive, setpageActive] = useState([true, false, false, false])
 
   return (
     <div className="Home">
