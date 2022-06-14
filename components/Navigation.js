@@ -9,7 +9,7 @@ export default function Navigation() {
           {
             id: 'one',
             label: 'Home',
-            href: '#topOfPage'
+            href: '/home-page'
           },
           {
             id: 'two',
@@ -19,7 +19,7 @@ export default function Navigation() {
           {
             id: 'three',
             label: 'Products',
-            href: '#feature-product'
+            href: '/product-page'
           }
         ]}
         pageId="one"

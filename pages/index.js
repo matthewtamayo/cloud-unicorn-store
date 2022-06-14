@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import HomePage from './home-page'
+import ProductPage from './product-page'
 
 export default function Main() {
 
@@ -18,7 +19,9 @@ export default function Main() {
   }
   return (
     <div>
-      <HomePage states={states} />
+      {/* <HomePage states={states} /> */}
+
+      <ProductPage />
 
       
     </div>
