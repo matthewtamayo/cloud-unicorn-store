@@ -2,12 +2,12 @@ import styles from '../styles/HomePage.module.css'
 
 import { useState } from 'react'
 
-import { UnicornLogo, FeatureProductsCarousel } from '../components/home'
-import { SearchBar, ProductCard } from '../components'
+import { UnicornLogo, FeatureProductsCarousel } from '../components/home/index'
+import { SearchBar, ProductCard, FloatingCart } from '../components/index'
 
 import { Typography } from '@telus-uds/ds-allium'
 
-import { sampleUnicorns } from '../constants'
+import { sampleUnicorns } from '../constants/index'
 
 function HomePage() {
   const [imageIndex, setImageIndex] = useState(0)
@@ -17,6 +17,8 @@ function HomePage() {
     <div className="Home">
       <UnicornLogo />
       <SearchBar />
+
+      <FloatingCart />
 
       <div className={styles.featuredProductsTextWrapper}>
         <Typography variant={{ size: 'display2' }} heading="h2">

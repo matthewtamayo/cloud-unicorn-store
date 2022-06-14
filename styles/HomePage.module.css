@@ -28,7 +28,7 @@
     margin: 4rem 0rem 1rem 0rem;
   }
 
-  #floating-cart-icon {
+  .floatingCartIcon {
     margin: 1rem;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
