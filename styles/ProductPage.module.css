@@ -1,0 +1,36 @@
+@media only screen and (min-width: 280px) {
+  #product-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #floating-cart-icon {
+    margin: 1rem;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 10%; /* Position the navbar at the top of the page */
+    right: 0;
+    z-index: 1;
+  }
+
+  #products-stackview-wrapper {
+    margin-top: 2rem;
+  }
+
+  .product-card-wrapper {
+    padding: 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .product-card-wrapper {
+    padding: 1rem;
+  }
+}
