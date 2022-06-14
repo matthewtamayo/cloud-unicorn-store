@@ -14,7 +14,7 @@ function HomePage() {
   const [pageActive, setpageActive] = useState([true, false, false, false])
 
   return (
-    <div className="Home">
+    <div>
       <UnicornLogo />
       <SearchBar />
 
