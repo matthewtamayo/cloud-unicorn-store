@@ -1,4 +1,4 @@
-import { Typography, StackView, FlexGrid } from '@telus-uds/ds-allium'
+import { Typography, FlexGrid } from '@telus-uds/ds-allium'
 import styles from '../styles/ProductPage.module.css'
 
 import { SearchBar, ProductCard } from '../components'
@@ -8,21 +8,21 @@ export default function ProductPage() {
   const products = sampleUnicorns.map((unicorn) => {
     return (
       <FlexGrid.Col xs={12} md={4}>
-        <div className='product-card-wrapper'>
-          <ProductCard unicorn={unicorn} />
+        <div className={styles.productCardWrapper}>
+          <ProductCard key={unicorn.name} unicorn={unicorn} />
         </div>
       </FlexGrid.Col>
     )
   })
 
   return (
-    <div className="Product">
-      <div id="product-page-wrapper">
+    <div>
+      <div className={styles.productPageWrapper}>
         <Typography variant={{ size: 'h1' }}>Products</Typography>
 
         <SearchBar />
 
-        <div id="products-stackview-wrapper">
+        <div className={styles.productFlexGridWrapper}>
           <FlexGrid>
             <FlexGrid.Row>{products}</FlexGrid.Row>
           </FlexGrid>

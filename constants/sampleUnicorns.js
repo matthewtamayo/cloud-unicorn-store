@@ -26,13 +26,13 @@ const sampleUnicorns = [
     price: 4000
   },
   {
-    name: 'Blossom',
+    name: 'ButterCup',
     image: sampleImages[3],
     description: 'A leader by heart and in action.',
     price: 4000
   },
   {
-    name: 'Blossom',
+    name: 'Bubbles',
     image: sampleImages[3],
     description: 'A leader by heart and in action.',
     price: 4000
