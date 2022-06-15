@@ -1,5 +1,6 @@
-##### Unicorn Store NextJS
+:rainbow:
+### Unicorn Store NextJS :stars: :sun_with_face:
 
-This is the unicorn store that will be implemented as another microfrontend along with the unicorn-run app.
+:floppy_disk: This is the unicorn store that will be implemented as another microfrontend along with the unicorn-run app.
 
-It is sort of like an eCommerce website.
+:convenience_store: It is sort of like an eCommerce website.
