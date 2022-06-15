@@ -1,9 +1,8 @@
 import { Typography, ButtonLink } from '@telus-uds/ds-allium'
 import styles from '../styles/PaymentPage.module.css'
-import { PaymentTable, PaymentModal } from '../components/payment'
-import { useState } from 'react'
+import { PaymentTable } from '../components/payment'
 
-export default function CartPage() {
+export default function PaymentPage() {
   return (
     <div>
       <div className={styles.paymentTitleWrapper}>
@@ -21,7 +20,6 @@ export default function CartPage() {
       </div>
 
       {/* for some reason modal doesn't pop up right away, will use another page for order complete instead */}
-      {/* <PaymentModal isOpen={isOpen} setIsOpen={setIsOpen}/> */}
     </div>
   )
 }
