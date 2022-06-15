@@ -1,7 +1,8 @@
 import { Table, IconButton } from '@telus-uds/ds-allium'
 import styles from '../../styles/CartPage.module.css'
+import { cartItem } from '../../interface'
 
-export default function CartTableRow({ quantity, unicorn }) {
+export default function CartTableRow({ quantity, unicorn }: cartItem) {
   const { name, price } = unicorn
   return (
     <Table.Row>

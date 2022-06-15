@@ -1,7 +1,8 @@
 import Navigation from './Navigation'
 import Head from 'next/head'
+import React from 'react'
 
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Head>

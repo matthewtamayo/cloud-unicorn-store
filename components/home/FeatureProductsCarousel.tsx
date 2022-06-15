@@ -1,7 +1,7 @@
 import { Pagination } from '@telus-uds/ds-allium'
 import styles from '../../styles/HomePage.module.css'
 
-export default function FeatureProductsCarousel({ setImageIndex, setpageActive, pageActive }) {
+export default function FeatureProductsCarousel({ setImageIndex, setpageActive, pageActive }: any) {
   return (
     <div className={styles.paginationWrapper}>
       <Pagination>
