@@ -1,7 +1,8 @@
 import { ResponsiveImage, Typography, Box, Button, Card, Spacer } from '@telus-uds/ds-allium'
 import styles from '../styles/HomePage.module.css'
+import { unicorn } from '../interface'
 
-export default function ProductCard({ unicorn }) {
+export default function ProductCard({ unicorn }: { unicorn: unicorn }) {
   const { image, name, description } = unicorn
 
   return (
