@@ -5,7 +5,7 @@ export default function OrderPage() {
   const orderNumber = 123
 
   return (
-    <div>
+    <>
       <div className={styles.thankYouWrapper}>
         <Typography variant={{ size: 'h1' }}>{'Order placed #' + orderNumber}</Typography>
 
@@ -14,6 +14,6 @@ export default function OrderPage() {
       <div className={styles.linkWrapper}>
         <ButtonLink variant={{ size: 'small' }}>Back to setting high scores!</ButtonLink>
       </div>
-    </div>
+    </>
   )
 }

@@ -10,7 +10,7 @@ function HomePage() {
   const [pageActive, setpageActive] = useState([true, false, false, false])
 
   return (
-    <div>
+    <>
       <UnicornLogo />
       <SearchBar />
 
@@ -29,7 +29,7 @@ function HomePage() {
       </div>
 
       <FeatureProductsCarousel setImageIndex={setImageIndex} pageActive={pageActive} setpageActive={setpageActive} />
-    </div>
+    </>
   )
 }
 

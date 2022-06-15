@@ -5,8 +5,8 @@ export default function Main() {
   // for now store states inside the pages and not pass them to other pages
 
   return (
-    <div>
+    <>
       <HomePage />
-    </div>
+    </>
   )
 }

@@ -4,7 +4,7 @@ import styles from '../styles/CartPage.module.css'
 
 export default function CartPage() {
   return (
-    <div>
+    <>
       <div className={styles.cartTitleWrapper}>
         <Typography variant={{ size: 'h1' }}>Cart</Typography>
       </div>
@@ -12,6 +12,6 @@ export default function CartPage() {
       <div className={styles.toShippingWraper}>
         <ButtonLink href='/shipping-page' variant={{ size: 'small' }}>Go To Shipping</ButtonLink>
       </div>
-    </div>
+    </>
   )
 }

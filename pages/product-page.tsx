@@ -15,7 +15,7 @@ export default function ProductPage() {
   })
 
   return (
-    <div>
+    <>
       <FloatingCart />
 
       <div className={styles.productPageWrapper}>
@@ -29,6 +29,6 @@ export default function ProductPage() {
           </FlexGrid>
         </div>
       </div>
-    </div>
+    </>
   )
 }
