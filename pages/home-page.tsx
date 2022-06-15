@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { UnicornLogo, FeatureProductsCarousel } from '../components/home/index'
 import { SearchBar, ProductCard, FloatingCart } from '../components/index'
 import { Typography } from '@telus-uds/ds-allium'
-import { sampleUnicorns } from '../constants/index'
+import { sampleUnicorns } from '../constants'
 
 function HomePage() {
   const [imageIndex, setImageIndex] = useState(0)

@@ -1,4 +1,4 @@
-import { Table, Typography, PriceLockup, Button } from '@telus-uds/ds-allium'
+import { Table, Typography, PriceLockup } from '@telus-uds/ds-allium'
 import PaymentTableRow from './PaymentTableRow'
 import { sampleCartItems } from '../../constants'
 import styles from '../../styles/PaymentPage.module.css'

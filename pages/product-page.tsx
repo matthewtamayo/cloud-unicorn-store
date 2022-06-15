@@ -1,7 +1,7 @@
 import { Typography, FlexGrid } from '@telus-uds/ds-allium'
 import styles from '../styles/ProductPage.module.css'
 import { SearchBar, ProductCard, FloatingCart } from '../components/index'
-import { sampleUnicorns } from '../constants/index'
+import { sampleUnicorns } from '../constants'
 
 export default function ProductPage() {
   const products = sampleUnicorns.map((unicorn) => {
