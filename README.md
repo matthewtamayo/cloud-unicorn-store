@@ -2,4 +2,4 @@
 
 This is the unicorn store that will be implemented as another microfrontend along with the unicorn-run app.
 
-It features CRUD operations in an eCommerce way.
+It is sort of like an eCommerce website.
