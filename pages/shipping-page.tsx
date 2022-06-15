@@ -11,7 +11,7 @@ function Shipping() {
   }
 
   return (
-    <div>
+    <>
       <div className={styles.shippingInformationWrapper}>
         <Typography variant={{ size: 'h1' }}>Shipping Information</Typography>
 
@@ -48,14 +48,14 @@ function Shipping() {
             </div>
 
             <div className={styles.confirmShippingWrapper}>
-              <ButtonLink href='/payment-page' tokens={{ borderRadius: 'none', backgroundColor: '#A2FAA3', color: '#131515', borderColor: '#A2FAA3' }} variant={{ size: 'small' }}>
+              <ButtonLink href="/payment-page" tokens={{ borderRadius: 'none', backgroundColor: '#A2FAA3', color: '#131515', borderColor: '#A2FAA3' }} variant={{ size: 'small' }}>
                 Confirm
               </ButtonLink>
             </div>
           </div>
         )}
       </div>
-    </div>
+    </>
   )
 }
 
