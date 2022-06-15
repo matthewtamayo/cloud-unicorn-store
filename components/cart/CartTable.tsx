@@ -1,4 +1,4 @@
-import { Table, Typography, PriceLockup, ButtonLink } from '@telus-uds/ds-allium'
+import { Table, Typography, PriceLockup } from '@telus-uds/ds-allium'
 import CartTableRow from './CartTableRow'
 import { sampleCartItems } from '../../constants'
 import styles from '../../styles/CartPage.module.css'
@@ -28,10 +28,6 @@ export default function CartTable() {
 
         {/* pricelookup wants string to be price */}
         <PriceLockup price={totalPrice.toString()} />
-      </div>
-
-      <div className={styles.toShippingWraper}>
-        <ButtonLink variant={{ size: 'small' }}>Go To Shipping</ButtonLink>
       </div>
     </div>
   )

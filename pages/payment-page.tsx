@@ -16,7 +16,7 @@ export default function PaymentPage() {
       <PaymentTable />
 
       <div className={styles.payNowWrapper}>
-        <ButtonLink variant={{ size: 'small' }}>Pay Now</ButtonLink>
+        <ButtonLink href='order-complete-page' variant={{ size: 'small' }}>Pay Now</ButtonLink>
       </div>
 
       {/* for some reason modal doesn't pop up right away, will use another page for order complete instead */}

@@ -9,7 +9,7 @@ export default function Navigation() {
           {
             id: 'one',
             label: 'Home',
-            href: '/home-page'
+            href: '/'
           },
           {
             id: 'two',

@@ -2,7 +2,7 @@ import styles from '../styles/ShippingPage.module.css'
 
 import { useState } from 'react'
 
-import { Typography, Box, Select, Button, PriceLockup, Spacer } from '@telus-uds/ds-allium'
+import { Typography, Box, Select, Button, PriceLockup, Spacer, ButtonLink } from '@telus-uds/ds-allium'
 
 function Shipping() {
   const [showDistanceAndCost, setShowDistanceAndCost] = useState(false)
@@ -50,9 +50,9 @@ function Shipping() {
             </div>
 
             <div className={styles.confirmShippingWrapper}>
-              <Button tokens={{ borderRadius: 'none', backgroundColor: '#A2FAA3', color: '#131515', borderColor: '#A2FAA3' }} variant={{ size: 'small' }}>
+              <ButtonLink href='/payment-page' tokens={{ borderRadius: 'none', backgroundColor: '#A2FAA3', color: '#131515', borderColor: '#A2FAA3' }} variant={{ size: 'small' }}>
                 Confirm
-              </Button>
+              </ButtonLink>
             </div>
           </div>
         )}
