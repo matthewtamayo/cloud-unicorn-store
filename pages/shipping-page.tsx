@@ -1,6 +1,7 @@
 import styles from '../styles/ShippingPage.module.css'
 import { useState } from 'react'
 import { Typography, Box, Select, Button, PriceLockup, Spacer, ButtonLink } from '@telus-uds/ds-allium'
+import { UnicornLogo } from '../components'
 
 function Shipping() {
   const [showDistanceAndCost, setShowDistanceAndCost] = useState(false)
@@ -12,6 +13,7 @@ function Shipping() {
 
   return (
     <>
+      <UnicornLogo />
       <div className={styles.shippingInformationWrapper}>
         <Typography variant={{ size: 'h1' }}>Shipping Information</Typography>
 
