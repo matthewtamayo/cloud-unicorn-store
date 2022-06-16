@@ -1,6 +1,6 @@
 import { Typography, FlexGrid } from '@telus-uds/ds-allium'
 import styles from '../styles/ProductPage.module.css'
-import { SearchBar, ProductCard, FloatingCart } from '../components/index'
+import { SearchBar, ProductCard, FloatingCart, UnicornLogo } from '../components'
 import { sampleUnicorns } from '../constants'
 
 export default function ProductPage() {
@@ -18,8 +18,10 @@ export default function ProductPage() {
     <>
       <FloatingCart />
 
+      <UnicornLogo />
+
       <div className={styles.productPageWrapper}>
-        <Typography variant={{ size: 'h1' }}>Products</Typography>
+        <Typography variant={{ size: 'h1' }}>Catalogue</Typography>
 
         <SearchBar />
 

@@ -1,5 +1,5 @@
 import { Image, Typography, Box } from '@telus-uds/ds-allium'
-import styles from '../../styles/HomePage.module.css'
+import styles from '../styles/HomePage.module.css'
 
 export default function UnicornLogo() {
   return (

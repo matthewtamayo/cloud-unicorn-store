@@ -1,7 +1,7 @@
 import styles from '../styles/HomePage.module.css'
 import { useState } from 'react'
-import { UnicornLogo, FeatureProductsCarousel } from '../components/home/index'
-import { SearchBar, ProductCard, FloatingCart } from '../components/index'
+import { FeatureProductsCarousel } from '../components/home/index'
+import { SearchBar, ProductCard, FloatingCart, UnicornLogo } from '../components/index'
 import { Typography } from '@telus-uds/ds-allium'
 import { sampleUnicorns } from '../constants'
 
