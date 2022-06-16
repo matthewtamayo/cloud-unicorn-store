@@ -1,4 +1,3 @@
-import Navigation from './Navigation'
 import Head from 'next/head'
 import React from 'react'
 
@@ -8,7 +7,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Head>
         <title>Unicorn Store</title>
       </Head>
-      <Navigation />
       {children}
     </>
   )
