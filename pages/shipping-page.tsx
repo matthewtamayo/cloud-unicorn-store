@@ -1,16 +1,8 @@
 import styles from '../styles/ShippingPage.module.css'
-import { useState } from 'react'
 import { Typography, Box, Select, Button, PriceLockup, Spacer, ButtonLink } from '@telus-uds/ds-allium'
 import { UnicornLogo } from '../components'
 
 function Shipping() {
-  const [showDistanceAndCost, setShowDistanceAndCost] = useState(false)
-
-  const calculateShippingCost = () => {
-    // logic for calculating
-    setShowDistanceAndCost(true)
-  }
-
   return (
     <>
       <UnicornLogo />
@@ -33,29 +25,21 @@ function Shipping() {
           </Select>
         </Box>
 
-        <Box top={9}>
-          <Button onPress={calculateShippingCost} tokens={{ borderRadius: 'none', backgroundColor: '#A52422', color: 'white', borderColor: '#A52422' }} variant={{ size: 'small' }}>
-            Calculate Shipping
-          </Button>
-        </Box>
+        <div className={styles.distanceCostWrapper}>
+          <Typography variant={{ size: 'h3' }}>Distance: 1000 KM</Typography>
+          <Spacer top={10} />
+          <div className={styles.shippingCostWrapper}>
+            <Typography variant={{ size: 'h3' }}>Cost:</Typography>
 
-        {showDistanceAndCost && (
-          <div className={styles.distanceCostWrapper}>
-            <Typography variant={{ size: 'h3' }}>Distance: 1000 KM</Typography>
-            <Spacer top={10} />
-            <div className={styles.shippingCostWrapper}>
-              <Typography variant={{ size: 'h3' }}>Cost:</Typography>
-
-              <PriceLockup price="1000" />
-            </div>
-
-            <div className={styles.confirmShippingWrapper}>
-              <ButtonLink href="/payment-page" tokens={{ borderRadius: 'none', backgroundColor: '#A2FAA3', color: '#131515', borderColor: '#A2FAA3' }} variant={{ size: 'small' }}>
-                Confirm
-              </ButtonLink>
-            </div>
+            <PriceLockup price="1000" />
           </div>
-        )}
+
+          <div className={styles.confirmShippingWrapper}>
+            <ButtonLink href="/payment-page" tokens={{ borderRadius: 'none', backgroundColor: '#A2FAA3', color: '#131515', borderColor: '#A2FAA3' }} variant={{ size: 'small' }}>
+              Confirm
+            </ButtonLink>
+          </div>
+        </div>
       </div>
     </>
   )
