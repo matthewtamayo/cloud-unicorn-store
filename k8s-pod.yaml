@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: unicorn-front-app
+spec:
+  containers:
+  - name: unicorn-front
+    image: unicorn-front
